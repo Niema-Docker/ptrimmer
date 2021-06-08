@@ -4,8 +4,9 @@ MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 
 # install pTrimmer
 RUN apk update && \
-    apk add bash gcc linux-headers make musl-dev python3 zlib-dev && \
+    apk add bash gcc linux-headers make musl-dev py3-pip python3 zlib-dev && \
     ln -s /usr/bin/python3 /usr/bin/python && \
+    pip install --no-cache-dir 'pyfaidx==0.5.9.5' && \
     wget -qO- "https://github.com/DMU-lilab/pTrimmer/archive/refs/tags/V1.3.4.tar.gz" | tar -zx && \
     cd pTrimmer-* && \
     make && \

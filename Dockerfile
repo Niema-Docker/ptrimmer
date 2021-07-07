@@ -1,5 +1,5 @@
 # Minimal Docker image for pTrimmer v1.3.4 using Alpine base
-FROM alpine:latest
+FROM alpine:3.13.5
 MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 
 # install pTrimmer

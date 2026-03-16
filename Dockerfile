@@ -10,7 +10,7 @@ RUN apk update && \
     wget -qO- "https://github.com/DMU-lilab/pTrimmer/archive/refs/tags/V1.4.1.tar.gz" | tar -zx && \
     cd pTrimmer-* && \
     make && \
-    mv pTrimmer-* /usr/local/bin/pTrimmer && \
+    mv pTrimmer /usr/local/bin/pTrimmer && \
     chmod a+x Test/*.py && \
     mv Test/*.py /usr/local/bin/ && \
     cd .. && \
